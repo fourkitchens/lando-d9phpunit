@@ -5,7 +5,7 @@ tools can have an approach to easily do so using Lando.
 It is worth mentioning that this little project presumes default landoconfiguration
 is in place, extra work might be done to adapt this repo to some local setups.
 
-## Install
+## Install and usage
 To start on a fresh Vanilla Drupal 9 site. Do the following:
 
 1. Create a Drupal 9 project locally and clone this repo files into your project root:
