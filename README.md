@@ -24,7 +24,7 @@ You should end up with the files found in this repo at the root of your project.
 3. Make directories for browser output, which will help debug Functional tests:
 `mkdir web/sites/simpletest && mkdir web/sites/simpletest/browser_output`
 4. Run `lando start` to get your local environment setup and running.
-5. Start testing with `lando test`, (e.g. `lando test --verbose --debug --stop-on-failure  web/core/modules/action/tests/src/FunctionalJavascript/ActionFormAjaxTest.php`)
+5. Start testing with `lando test`, (e.g. `lando test --verbose --debug --stop-on-failure web/core/modules/color/tests/src/Functional/ColorConfigSchemaTest.php`)
 
 ## Notes
 - If deprecations are getting in your way, uncomment the `phpunit.xml` env var
