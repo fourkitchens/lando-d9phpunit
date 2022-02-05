@@ -4,8 +4,16 @@ tools can have an approach to easily do so using Lando.
 ## Install
 To start on a fresh Vanilla Drupal 9 site. Do the following:
 
-1. Create a Drupal 9 project locally and clone this repo files into your project:
-`composer create-project drupal/recommended-project d9phpunit && git clone git@github.com:fourkitchens/lando-d9phpunit.git .`
+1. Create a Drupal 9 project locally and clone this repo files into your project root:
+```
+composer create-project drupal/recommended-project d9phpunit
+cd lando-d9phpunit
+git clone git@github.com:fourkitchens/lando-d9phpunit.git
+mv lando-d9phpunit/.* .
+mv lando-d9phpunit/* .
+rm -rf lando-d9phpunit
+```
+You should end up with the files found in this repo at the root of your project.
 2. With composer, install development tools:
 `composer require drupal/core-dev --dev --with-all-dependencies && composer require --dev phpspec/prophecy-phpunit`
 3. Make directories for browser output, which will help debug Functional tests:
