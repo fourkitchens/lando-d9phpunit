@@ -7,7 +7,7 @@ To start on a fresh Vanilla Drupal 9 site. Do the following:
 1. Create a Drupal 9 project locally and clone this repo files into your project root:
 ```
 composer create-project drupal/recommended-project d9phpunit
-cd lando-d9phpunit
+cd d9phpunit
 git clone git@github.com:fourkitchens/lando-d9phpunit.git
 mv lando-d9phpunit/.* .
 mv lando-d9phpunit/* .
