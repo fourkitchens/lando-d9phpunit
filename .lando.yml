@@ -1,0 +1,20 @@
+name: d9phpunit
+recipe: drupal9
+config:
+  webroot: web
+services:
+  appserver:
+    overrides:
+      environment:
+        SIMPLETEST_BASE_URL: "http://d9phpunit.lndo.site"
+        SIMPLETEST_DB: "mysql://drupal9:drupal9@database:3306/drupal9"
+        MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","chromeOptions":{"args":["--disable-gpu","--headless","--no-sandbox","--disable-dev-shm-usage"]}}, "http://chrome:9515"]'
+  chrome:
+    type: compose
+    services:
+      image: drupalci/webdriver-chromedriver:production
+      command: chromedriver --log-path=/tmp/chromedriver.log --verbose --whitelisted-ips=
+tooling:
+  test:
+    service: appserver
+    cmd: "php /app/vendor/bin/phpunit -c /app/phpunit.xml"

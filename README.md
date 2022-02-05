@@ -1,5 +1,5 @@
 This project purpose is so developers who need quick access to Unit testing
-tools can have an approach to easily do so.
+tools can have an approach to easily do so using Lando.
 
 ## Install
 To start on a fresh Vanilla Drupal 9 site. Do the following:
@@ -15,3 +15,6 @@ To start on a fresh Vanilla Drupal 9 site. Do the following:
 ## Notes
 - If deprecations are getting in your way, uncomment the `phpunit.xml` env var
 `SYMFONY_DEPRECATIONS_HELPER` which is set to `disabled`.
+
+## References
+This was based on this very cool article: https://agile.coop/blog/drupal-phpunit-tests-lando/.
