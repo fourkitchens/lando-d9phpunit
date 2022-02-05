@@ -10,7 +10,8 @@ To start on a fresh Vanilla Drupal 9 site. Do the following:
 `composer require drupal/core-dev --dev --with-all-dependencies && composer require --dev phpspec/prophecy-phpunit`
 3. Make directories for browser output, which will help debug Functional tests:
 `mkdir web/sites/simpletest && mkdir web/sites/simpletest/browser_output`
-4. Start testing with `lando test`, (e.g. `lando test --verbose --debug --stop-on-failure  web/core/modules/action/tests/src/FunctionalJavascript/ActionFormAjaxTest.php`)
+4. Run `lando start` to get your local environment setup and running.
+5. Start testing with `lando test`, (e.g. `lando test --verbose --debug --stop-on-failure  web/core/modules/action/tests/src/FunctionalJavascript/ActionFormAjaxTest.php`)
 
 ## Notes
 - If deprecations are getting in your way, uncomment the `phpunit.xml` env var
