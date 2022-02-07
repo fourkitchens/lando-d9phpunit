@@ -1,8 +1,8 @@
 This project purpose is so developers who need quick access to Unit testing
-tools can have an approach to easily do so using Lando.
+tools in Drupal 9, can have an approach to easily do so using Lando.
 
 ## Before starting
-It is worth mentioning that this little project presumes default landoconfiguration
+It is worth mentioning that this little project presumes default Lando configuration
 is in place, extra work might be done to adapt this repo to some local setups.
 
 ## Install and usage
